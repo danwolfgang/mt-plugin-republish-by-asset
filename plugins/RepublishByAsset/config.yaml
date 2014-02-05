@@ -1,0 +1,21 @@
+name:        'Republish By Asset'
+description: 'Republish Entries and Pages associated with an Asset.'
+author:      'Dan Wolfgang, uiNNOVATIONS'
+author_link: http://uinnovations.com
+plugin_link: http://github.com/danwolfgang/mt-plugin-republish-by-asset
+version:     1.0.0
+
+list_actions:
+    asset:
+        republish:
+            label: 'Republish Associated Objects'
+            order: 200
+            code: $RepublishByAsset::RepublishByAsset::Plugin::republish_by_asset
+            continue_prompt: 'Are you sure you want to republish the objects associated with the selected asset(s)?'
+
+page_actions:
+    asset:
+        republish:
+            label: 'Republish Associated Objects'
+            order: 200
+            code: $RepublishByAsset::RepublishByAsset::Plugin::republish_by_asset
